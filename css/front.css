@@ -1,0 +1,220 @@
+a.egiftcardlite_placeholder, 
+a.egiftcardlite_placeholder:hover {
+    color: #21759b;
+}
+
+div.egiftcardlite_signup_box {
+    background-color: #f8f8f8;    border: 2px solid #ccc;    border-radius: 3px;    border-spacing: 0;    box-sizing: border-box;    color: #333;    font-family: arial,verdana;    font-size: 13px;    margin: 5px;    padding: 15px;    position: relative;
+}div.egiftcardlite_signup_box  a{  color: #21759b !important;}
+
+div.egiftcardlite_signup_box form {
+	padding: 0px;
+	margin: 0px;
+}
+
+div.egiftcardlite_signup_box label {
+	font-size: 13px;	font-family: arial, verdana;
+	color: #333;
+	line-height: 22px;
+}
+
+div.egiftcardlite_signup_box label.egiftcardlite_bigfont {
+    color: #333;    font-family: arial,verdana;    font-size: 16px;	font-weight: bold;    line-height: normal;    margin: 0 0 10px !important;    padding: 0 !important;
+}
+
+div.egiftcardlite_signup_box label span {
+	font-size: 13px;
+	font-family: arial;
+	color: #888;
+}
+
+div.egiftcardlite_signup_box .egiftcardlite_hidden {
+	display: none;
+	margin-top: 15px;
+}
+
+div.egiftcardlite_signup_box .egiftcardlite_addrecipient {
+	display: inline-block;
+	font-size: 14px;
+	font-family: arial;
+	color: #888;
+
+	text-decoration: none;
+}
+div.egiftcardlite_signup_box .egiftcardlite_addrecipient:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+div.egiftcardlite_signup_box em {
+    background-color: transparent;    color: #888;    display: inline-block;    font-family: arial,verdana;    font-size: 12px;    line-height: 15px;    margin: 5px 0 0;    padding: 0;
+}
+
+select.egiftcardlite_signup_long, 
+input.egiftcardlite_signup_long {
+	font-size: 13px !important;	font-family: arial, verdana;	line-height: 1.4 !important;	font-weight: normal;	-moz-border-radius: 3px;	-webkit-border-radius: 3px;	-o-border-radius: 3px;	-ms-border-radius: 3px;	-khtml-border-radius: 3px;	border-radius: 3px;	padding: 4px 6px;	border: 1px solid #CCC;	border-spacing: 0;	font-family: arial, verdana;	margin: 0px;	background-color: #FFF !important;	height: auto;	min-width: 0px;	max-width: 100%;
+	width: 98%;
+/*	padding: 0px;*/
+}
+input.egiftcardlite_signup_short {
+	border: 2px solid #888;
+	font-size: 18px;
+	font-family: arial;
+	width: 80px;
+	text-align: right;
+	margin: 0px;
+/*	padding: 0px;*/
+}
+input.egiftcardlite_signup_long:focus,
+input.egiftcardlite_signup_short:focus {
+	background: #FDFDB8;
+}
+div.egiftcardlite_signup_buttons {
+	height: 40px;
+}
+input.egiftcardlite_signup_button {	display: inline-block;	*display: inline;	padding: 4px 14px;	margin-bottom: 0;	margin-top: 0px;	*margin-left: .3em;	font-family: arial, verdana;	font-size: 14px;	height: auto;	min-width: 0px;	max-width: 100%;	line-height: 20px;	*line-height: 20px;	text-align: center;	vertical-align: middle;	cursor: pointer;	border: 1px solid #bbbbbb;	*border: 0;	border-bottom-color: #a2a2a2;	-webkit-border-radius: 3px;	-moz-border-radius: 3px;	border-radius: 3px;	*zoom: 1;	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);	color: #ffffff;	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);	background-color: #5bb75b;	*background-color: #51a351;	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));	background-image: -webkit-linear-gradient(top, #62c462, #51a351);	background-image: -o-linear-gradient(top, #62c462, #51a351);	background-image: linear-gradient(to bottom, #62c462, #51a351);	background-image: -moz-linear-gradient(top, #62c462, #51a351);	background-repeat: repeat-x;	border-color: #51a351 #51a351 #387038;	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);	filter: progid:dximagetransform.microsoft.gradient(startColorstr="#ff62c462", endColorstr="#ff51a351", GradientType=0);	filter: progid:dximagetransform.microsoft.gradient(enabled=false);}input.egiftcardlite_signup_button:hover, input.egiftcardlite_signup_button:active {	text-decoration: none;	-webkit-transition: background-position 0.1s linear;	-moz-transition: background-position 0.1s linear;	-o-transition: background-position 0.1s linear;	transition: background-position 0.1s linear;	color: #ffffff;	background: #51a351;	*background: #499249;	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);	border: 1px solid transparent;	*border: 0;}
+div.egiftcardlite_signup_terms {
+	height: 120px;
+	overflow: scroll;
+	border: 2px solid #888;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: arial;
+	padding: 3px;
+}
+.egiftcardlite_redborder {
+	border-color: red !important;
+}
+div#egiftcardlite_signup_spinner {
+	display: none;
+	background: transparent url(../images/spinner.gif) 0 0 no-repeat;
+	margin: 0px;
+	padding: 0px;
+	width: 36px;
+	height: 36px;
+}
+div#egiftcardlite_signup_errorbox {
+	display: none;
+	background: #FFE8E0 url(../images/failed01.png) 10px 5px no-repeat !important; 
+	margin: 5px 0px !important; 
+	padding: 5px 10px 5px 30px !important; 
+	color: red !important; 
+	font-size: 14px !important; 
+	font-weight: bold !important; 
+	text-align:left !important; 
+	border: 1px dotted red !important;
+	font-family: arial, verdana  !important;
+	line-height: 16px !important;
+}
+div#egiftcardlite_confirmation_container {
+	font-size: 18px;
+	color: #333;
+	font-family: arial;
+	line-height: 24px;
+	display: none;
+}
+div#egiftcardlite_confirmation_container table{
+	width: 100%;
+	margin: 0px;
+	padding: 0px !important;
+	border-width: 0px !important;
+}
+div#egiftcardlite_confirmation_container table tr{
+	margin: 0px;
+	padding: 0px !important;
+	border-width: 0px !important;
+}
+div#egiftcardlite_confirmation_container table tr td {
+	margin: 0px;
+	padding: 0px 0px 20px 0px !important;
+	border-width: 0px !important;
+	vertical-align: top;
+}
+div#egiftcardlite_confirmation_container table tr td.egiftcardlite_confirmation_data {
+	color: #555;
+}
+
+div#egiftcardlite_confirmation_container span {
+	font-size: 12px;
+}
+
+div#egiftcardlite_confirmation_container table tr td.egiftcardlite_confirmation_price {
+	color: green;
+	font-weight: bold;
+}
+
+p.egiftcardlite_text {
+	font-family: arial;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px;
+	padding: 0px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+p.egiftcardlite_noslots {
+	font-family: arial;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px !important;
+	padding: 0px !important;
+	text-align: center;
+}
+
+div.egiftcardlite_activelist_box {
+	border: 0px solid #CCC;
+	padding: 0px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+h2.egiftcardlite_activelist_h2 {
+	font-size: 20px;
+	margin: 0px !important;
+	padding: 0px !important;
+	font-family: arial;
+}
+table.egiftcardlite_activelist_table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #CCC !important;
+}
+table.egiftcardlite_activelist_table tr th {
+	color: #333 !important;
+	font-size: 16px !important;
+	font-family: arial !important;
+	font-weight: bold !important;
+	border: 1px solid #CCC;
+	text-align: center !important;
+	background-color: #E0DBD0;
+	padding: 5px !important;
+}
+table.egiftcardlite_activelist_table tr td {
+	color: #333 !important;
+	font-size: 16px !important;
+	font-family: arial !important;
+	border: 1px solid #CCC;
+	text-align: left;
+	padding: 5px !important;
+}
+a.egiftcardlite_activelist_link,
+span.egiftcardlite_activelist_link {
+	color: #47B;
+	font-size: 16px;
+	font-family: arial;
+	text-decoration: none;
+}
+a.egiftcardlite_activelist_link:hover {
+	text-decoration: underline;
+}
+table.egiftcardlite_confirmation_table,
+table.egiftcardlite_activelist_table {
+	background-color: transparent !important;
+}
+div.egiftcardlite_price {
+	float: right;
+	font-size: 16px;
+	font-family: arial;
+	font-weight: bold;
+	
+}a:hover {	text-decoration:none;	}a {	text-decoration:none;}#interface1 {	z-index:1;}#loader_container {    text-align:center;    position:absolute;    top:40%;    width:100%}#loader {	font-family:Tahoma, Helvetica, sans;	font-size:10px;	color:#000000;	background-color:#FFFFFF;	padding:10px 0 16px 0;	margin:0 auto;	display:block;	width:135px;	border:1px solid #6A6A6A;	text-align:left;	z-index:255;}#progress {	height:5px;	font-size:1px;	width:1px;	position:relative;	top:1px;	left:10px;	background-color:#9D9D94}#loader_bg {	background-color:#EBEBE4;	position:relative;	top:8px;left:8px;height:7px;	width:113px;font-size:1px}.border_preview{	z-index:100;	position:absolute; 	background: #fff;	border: 1px solid #444;}.preview_temp_load {	vertical-align:middle;	text-align:center;	padding: 10px;}.preview_temp_load img{		vertical-align:middle;	text-align:center;}/*Image Title Styling*/.title_h2 { padding:12px 0 0 18px;}h2 {	font-size:14px;	padding:0;	margin:0;	font-family: "century gothic";}#thumb2wrap {	position:relative;}.thumb2 img { position:relative;}.thumb2 span { 	position:absolute !important;	visibility:hidden;	padding: 5px;	z-index:5;	width:200px;	background-color: lightyellow;border: 1px solid gray;		}.thumb2:hover, .thumb2:hover span { 	visibility:visible;	z-index:100000;}.option_div{ display:inline-block; }/** Responsive work **/@media all and (max-width: 782px) {  .option_div{ display:block; }  .thumb2 span{ left: 20px;margin-top: 75px; }}

@@ -1,0 +1,185 @@
+.admin_egiftcardlite_wrap table.egiftcardlite_strings {
+	width: 100%;
+	border-collapse: collapse;
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_strings tr {
+
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_strings td,
+.admin_egiftcardlite_wrap table.egiftcardlite_strings th {
+	padding: 5px 5px 5px 5px;
+	vertical-align: top;
+	border: 1px solid #C0C0C0;
+}
+
+.admin_egiftcardlite_wrap table.egiftcardlite_strings th {
+	background-color: #E0DBD0;
+	vertical-align: middle;
+}
+
+.admin_egiftcardlite_wrap table.egiftcardlite_strings a{
+	color: #0080FF;
+	text-decoration: none;
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_strings a:hover{
+	text-decoration: underline;
+}
+.egiftcardlite_buttons {text-align: right; margin-bottom: 10px; margin-top: 10px; float: right;}
+.egiftcardlite_pageswitcher {
+	margin-right: 200px;
+	float: left;
+}
+.egiftcardlite_pageswitcher div {float: none !important;}
+
+.egiftcardlite_legend  {margin-top: 50px;}
+.egiftcardlite_legend  p {margin-top: 2px; margin-bottom: 2px; height: 100%; overflow: hidden;}
+.egiftcardlite_legend  img {float: left; margin-right: 10px;}
+
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions {
+	width: 100%;
+	border-collapse: collapse;
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions  em{
+	font-size: 11px;
+	color: #A0A0A0;
+}
+
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions tr {
+
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions td,
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions th {
+	padding: 5px 5px 5px 5px;
+	vertical-align: top;
+	border: 0px solid #C0C0C0;
+	text-align: left;
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions th {
+	width: 180px;
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions a{
+	color: #0080FF;
+	text-decoration: none;
+}
+.admin_egiftcardlite_wrap table.egiftcardlite_useroptions a:hover{
+	text-decoration: underline;
+}
+
+.egiftcardlite_historytable {
+	border-collapse: collapse;
+	width: 100%;
+}
+.egiftcardlite_historytable td,
+.egiftcardlite_historytable th {
+	padding: 5px 5px 5px 5px;
+	vertical-align: top;
+	border: 1px solid #C0C0C0;
+}
+.egiftcardlite_historytable th {
+	background-color: #E0DBD0;
+	vertical-align: middle;
+}
+.egiftcardlite_historytable td input {
+	margin: 0px; 
+	padding: 2px 0px; 
+	border: 1px solid #C0C0C0; 
+	background-color: #FFFFFF; 
+	font-family: arial; 
+	font-size: 13px;
+}
+div.postbox div.inside {
+margin: 10px;
+position: relative;
+height: 100%;
+overflow: hidden;
+}
+
+div.egiftcardlite_payment_selector {
+height: 100%;
+overflow: hidden;
+color: #808080;
+font-family: arial, verdana;
+font-size: 13px;
+text-align: center;
+line-height: 18px;
+}
+
+div.egiftcardlite_payment_selector  div.payment_selector_button {
+width: 240px;
+min-height: 60px;
+border: 2px solid #F4F4F4;
+background-color: #FCFCFC;
+text-align: center;
+cursor: pointer;
+margin: 5px;
+}
+
+div.egiftcardlite_payment_selector  div.payment_selector_button:hover {
+border: 2px solid #E4E4E4;
+}
+
+div.egiftcardlite_payment_selector  div.payment_selector_button  input.egiftcardlite_delivery_email {
+border: 1px solid #C0C0C0;
+background: #FFFFFF;
+color: #A0A0A0;
+font-family: arial;
+font-size: 12px;
+padding: 0px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+line-height: 14px;
+}
+
+div.egiftcardlite_payment_selector table.payment_selector_summary {
+border: 0px;
+text-align: left;
+margin: 8px 0px;
+}
+
+div.egiftcardlite_payment_selector table.payment_selector_summary  td {
+vertical-align: middle;
+padding: 2px;
+}
+
+a.egiftcardlite_button_link {
+text-decoration: none !important;
+}
+
+a.egiftcardlite_button_link  img{
+background: transparent !important;
+border: 0px solid transparent !important;
+padding: 0px !important;
+}
+
+#egiftcardlite_notes {
+color: #A0A0A0;
+font-size: 11px;
+line-height: 13px;
+}
+
+.egiftcardlite_errorbox {
+	background: #FFE8E0 url(../images/failed01.png) 10px 5px no-repeat !important; 
+	margin: 5px 0px !important; 
+	padding: 5px 10px 5px 30px !important; 
+	color: red !important; 
+	font-size: 12px !important; 
+	font-weight: bold !important; 
+	text-align:left !important; 
+	border: 1px dotted red !important;
+	font-family: arial, verdana  !important;
+	line-height: 16px !important;
+}
+
+.egiftcardlite_infobox {
+	background: #E8FFE0 url(../images/success01.png) 10px 5px no-repeat !important; 
+	margin: 5px 0px !important; 
+	padding: 5px 10px 5px 30px !important; 
+	color: green !important; 
+	font-size: 12px !important; 
+	font-weight: bold !important; 
+	text-align:left !important; 
+	border: 1px dotted green !important;
+	font-family: arial, verdana  !important;
+	line-height: 16px !important;
+}
