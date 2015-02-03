@@ -45,6 +45,14 @@ Install and activate the plugin like you do with any other plugins.
 
 To place the certificate in any page or post, use [egiftcardlite].
 
+= Pics (main header, thumbnail and preview sizes) =
+
+Below are the sizes for the pics you can upload to show in the front end 
+
+• 219x134px – Thumbnail size of the gift card shape that will show on front gift certificate form. 
+• 595x300px – Main header pic on the egift card, this will the actual size for print
+• 230x296px – Preview size for customer to view on the front form
+
 = IPN Handler =
 
 WPGC eGift Card flow will require IPN to be set in PayPal website.  It needs to be turned on (through PayPal) and place the url of your domain name, you can use http://www.place-your-domain-name-here.com/, note that you need to include the http://www and the trailing slash at the end. 
