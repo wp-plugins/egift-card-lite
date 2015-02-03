@@ -49,9 +49,9 @@ To place the certificate in any page or post, use [egiftcardlite].
 
 Below are the sizes for the pics you can upload to show in the front end 
 
-219x134px Thumbnail size of the gift card shape that will show on front gift certificate form. 
-595x300px Main header pic on the egift card, this will the actual size for print
-230x296px Preview size for customer to view on the front form
+*219x134px Thumbnail size of the gift card shape that will show on front gift certificate form. 
+*595x300px Main header pic on the egift card, this will the actual size for print
+*230x296px Preview size for customer to view on the front form
 
 = IPN Handler =
 

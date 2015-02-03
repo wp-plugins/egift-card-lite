@@ -581,7 +581,7 @@ $_POST['egiftcardlite_certimage']=$randstring.$_FILES["egiftcardlite_certimage_f
 					<td>'.htmlspecialchars((empty($row['recipient']) ? 'Unknown recipient' : $row['recipient']), ENT_QUOTES).'<br /><em style="font-size: 12px; line-height: 14px;">'.htmlspecialchars($row['email'], ENT_QUOTES).'</em></td>
 					<td style="text-align: center;">
 						<a href="'.get_bloginfo("wpurl").'/wp-admin/admin.php?page=egc-lite-add&id='.$row['id'].'" title="Edit certificate"><img src="'.plugins_url('/images/edit.png', __FILE__).'" alt="Edit certificate" border="0"></a>
-						<a target="_blank" href="'.get_bloginfo("wpurl").'/?cid='.$row["code"].'" title="Display certificate"><img src="'.plugins_url('/images/certificate.png', __FILE__).'" alt="Display certificate" border="0"></a>
+						<a target="_blank" href="'.get_bloginfo("wpurl").'/?ecid='.$row["code"].'" title="Display certificate"><img src="'.plugins_url('/images/certificate.png', __FILE__).'" alt="Display certificate" border="0"></a>
 						<a href="'.get_bloginfo("wpurl").'/wp-admin/admin.php?page=egc-lite-transactions&tid='.$row['tx_str'].'" title="Payment transactions"><img src="'.plugins_url('/images/transactions.png', __FILE__).'" alt="Payment transactions" border="0"></a>
 						'.(((time() <= $row["registered"] + 24*3600*$this->validity_period) && ($row["status"] == GCL_STATUS_ACTIVE_BYUSER || $row["status"] == GCL_STATUS_ACTIVE_BYADMIN)) ? '<a href="'.get_bloginfo("wpurl").'/wp-admin/admin.php?ak_action=egiftcardlite_block&id='.$row['id'].'" title="Block certificate" onclick="return egiftcardlite_submitOperation();"><img src="'.plugins_url('/images/block.png', __FILE__).'" alt="Block certificate" border="0"></a>' : '').'
 						'.(((time() <= $row["registered"] + 24*3600*$this->validity_period) && ($row["status"] == GCL_STATUS_ACTIVE_BYUSER || $row["status"] == GCL_STATUS_ACTIVE_BYADMIN)) ? '<a href="'.get_bloginfo("wpurl").'/wp-admin/admin.php?ak_action=egiftcardlite_redeem&id='.$row['id'].'" title="Mark certificate as redeemed" onclick="return egiftcardlite_submitOperation();"><img src="'.plugins_url('/images/redeem.png', __FILE__).'" alt="Mark certificate as redeemed" border="0"></a>' : '').'
@@ -959,7 +959,7 @@ $_POST['egiftcardlite_certimage']=$randstring.$_FILES["egiftcardlite_certimage_f
 	function front_init() {
 		global $wpdb;
 		
-		if($_REQUEST['cid'] or $_REQUEST['tid'])
+		if($_REQUEST['ecid'] or $_REQUEST['tid'])
 		{
 			
 		$this->showcertificate();
@@ -1018,7 +1018,7 @@ $_POST['egiftcardlite_certimage']=$randstring.$_FILES["egiftcardlite_certimage_f
 					'".time()."', '".time()."', '0','".$boughtecard."'
 					)";
 				if ($wpdb->query($sql) !== false) {
-					$items[] = htmlspecialchars($recipients[$i], ENT_QUOTES).' <span>(<a target="_blank" href="'.($this->use_https == "on" ? str_replace("http://", "https://", get_bloginfo("wpurl")) : get_bloginfo("wpurl")).'/?cid='.$code.'">certificate preview</a>)</span>';
+					$items[] = htmlspecialchars($recipients[$i], ENT_QUOTES).' <span>(<a target="_blank" href="'.($this->use_https == "on" ? str_replace("http://", "https://", get_bloginfo("wpurl")) : get_bloginfo("wpurl")).'/?ecid='.$code.'">certificate preview</a>)</span>';
 				}
 			}
 			if (sizeof($items) == 0) {
@@ -1072,12 +1072,12 @@ $ecardselected  =  '<tr><td>Gift card:</td><td class="egiftcardlite_confirmation
 
 			die();
 		} else if (isset($_GET["gcl-certificate"])) {
-			$cid = $_GET["gcl-certificate"];
-			$cid = preg_replace('/[^a-zA-Z0-9]/', '', $cid);
-			$certificate_details = $wpdb->get_row("SELECT * FROM ".$wpdb->prefix."egcl_certificates WHERE code = '".$cid."' AND deleted = '0'", ARRAY_A);
+			$ecid = $_GET["gcl-certificate"];
+			$ecid = preg_replace('/[^a-zA-Z0-9]/', '', $ecid);
+			$certificate_details = $wpdb->get_row("SELECT * FROM ".$wpdb->prefix."egcl_certificates WHERE code = '".$ecid."' AND deleted = '0'", ARRAY_A);
 			if (intval($certificate_details["id"]) != 0) {
 				if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/android|avantgo|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge|maemo|midp|mmp|opera m(ob|in)i|palm( os)?|phone|pixi|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/iu', $_SERVER['HTTP_USER_AGENT']))
-					header("Location: ".($this->use_https == "on" ? str_replace("http://", "https://", get_bloginfo("wpurl")) : get_bloginfo("wpurl")).'/?cid='.$certificate_details["code"]);
+					header("Location: ".($this->use_https == "on" ? str_replace("http://", "https://", get_bloginfo("wpurl")) : get_bloginfo("wpurl")).'/?ecid='.$certificate_details["code"]);
 				else 
 					header("Location: ".get_bloginfo("wpurl").'/wp-admin/admin.php?page=egc-lite-certificates&s='.$certificate_details["code"]);
 				exit;
@@ -1291,14 +1291,14 @@ $ecardlist  .=  '&nbsp;<a class="thumb2" href="#thumb2"><img src="'.$baseurl.$th
 			$upload_dir = wp_upload_dir();
 		$baseurl=$upload_dir['baseurl']."/egiftcardlite/";
 if ($this->check_settings() === true) {
-	$cid = $_GET["cid"];
-	$cid = preg_replace('/[^a-zA-Z0-9]/', '', $cid);
+	$ecid = $_GET["ecid"];
+	$ecid = preg_replace('/[^a-zA-Z0-9]/', '', $ecid);
 	$tid = $_GET["tid"];
 	$tid = preg_replace('/[^a-zA-Z0-9]/', '', $tid);
 
 	
 	if (!empty($tid)) $certificates = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."egcl_certificates WHERE tx_str = '".$tid."' AND deleted = '0'", ARRAY_A);
-	else $certificates = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."egcl_certificates WHERE code = '".$cid."' AND deleted = '0'", ARRAY_A);
+	else $certificates = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."egcl_certificates WHERE code = '".$ecid."' AND deleted = '0'", ARRAY_A);
 	print ('
 <html>
 <head>
