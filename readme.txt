@@ -1,10 +1,10 @@
 === WPGC eGift Card ===
-Contributors: GC GROUP
+Contributors: gcwebsolutions
 Plugin Name: eGift Card lite
 Plugin URI: http://www.wpgiftcertificatereloaded.com/egift-card
-Author: GC GROUP
+Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/egift-card
-Tags: gift certificate, gift, egift card, gift card, certificate, paypal, payment, sell, gift vouchers, wordpress gift certificate
+Tags: gift certificate, gift, egift card, gift card, gift cards, certificate, paypal, payment, sell, gift vouchers, wordpress gift certificate
 Requires at least: 3.5
 Tested up to: 4.1
 Stable tag: 1.00
