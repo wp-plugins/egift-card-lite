@@ -6,7 +6,7 @@ Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/egift-card
 Tags: gift certificate, gift, egift card, gift card, gift cards, certificate, paypal, payment, sell, gift vouchers, wordpress gift certificate
 Requires at least: 3.5
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: 1.00
 
 WPGC eGift Card Lite is a plugin which allows you to manage and sell printable eGift Card on your website using QR encoding image.
